@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7238842AD46981003FE2CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7238832AD46981003FE2CE /* Main.storyboard */; };
+		0A7238862AD48F80003FE2CE /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7238852AD48F80003FE2CE /* Date+Today.swift */; };
+		0A7238892AD492DC003FE2CE /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7238882AD492DC003FE2CE /* ReminderListViewController+DataSource.swift */; };
+		0A72388B2AD499F6003FE2CE /* UIColor+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72388A2AD499F6003FE2CE /* UIColor+Today.swift */; };
 		0A7849042ACDB88100D1941C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7849032ACDB88100D1941C /* AppDelegate.swift */; };
 		0A7849062ACDB88100D1941C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7849052ACDB88100D1941C /* SceneDelegate.swift */; };
 		0A7849082ACDB88100D1941C /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7849072ACDB88100D1941C /* ReminderListViewController.swift */; };
-		0A78490B2ACDB88100D1941C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7849092ACDB88100D1941C /* Main.storyboard */; };
 		0A78490D2ACDB88300D1941C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A78490C2ACDB88300D1941C /* Assets.xcassets */; };
 		0A7849102ACDB88300D1941C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A78490E2ACDB88300D1941C /* LaunchScreen.storyboard */; };
 		0A78491B2ACDB88300D1941C /* TodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78491A2ACDB88300D1941C /* TodayTests.swift */; };
@@ -37,11 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A7238832AD46981003FE2CE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0A7238852AD48F80003FE2CE /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		0A7238882AD492DC003FE2CE /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		0A72388A2AD499F6003FE2CE /* UIColor+Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Today.swift"; sourceTree = "<group>"; };
 		0A7849002ACDB88100D1941C /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7849032ACDB88100D1941C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A7849052ACDB88100D1941C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A7849072ACDB88100D1941C /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
-		0A78490A2ACDB88100D1941C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A78490C2ACDB88300D1941C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A78490F2ACDB88300D1941C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A7849112ACDB88300D1941C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A7238872AD49278003FE2CE /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0A7849072ACDB88100D1941C /* ReminderListViewController.swift */,
+				0A7238882AD492DC003FE2CE /* ReminderListViewController+DataSource.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
 		0A7848F72ACDB88100D1941C = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +116,11 @@
 		0A7849022ACDB88100D1941C /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				0A7238832AD46981003FE2CE /* Main.storyboard */,
 				0A7849342ACDB9A300D1941C /* Models */,
 				0A7849032ACDB88100D1941C /* AppDelegate.swift */,
 				0A7849052ACDB88100D1941C /* SceneDelegate.swift */,
-				0A7849072ACDB88100D1941C /* ReminderListViewController.swift */,
-				0A7849092ACDB88100D1941C /* Main.storyboard */,
+				0A7238872AD49278003FE2CE /* ListViewController */,
 				0A78490C2ACDB88300D1941C /* Assets.xcassets */,
 				0A78490E2ACDB88300D1941C /* LaunchScreen.storyboard */,
 				0A7849112ACDB88300D1941C /* Info.plist */,
@@ -133,7 +148,9 @@
 		0A7849342ACDB9A300D1941C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0A72388A2AD499F6003FE2CE /* UIColor+Today.swift */,
 				0A7849352ACDB9DF00D1941C /* Reminder.swift */,
+				0A7238852AD48F80003FE2CE /* Date+Today.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,9 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7238842AD46981003FE2CE /* Main.storyboard in Resources */,
 				0A7849102ACDB88300D1941C /* LaunchScreen.storyboard in Resources */,
 				0A78490D2ACDB88300D1941C /* Assets.xcassets in Resources */,
-				0A78490B2ACDB88100D1941C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,10 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A72388B2AD499F6003FE2CE /* UIColor+Today.swift in Sources */,
 				0A7849082ACDB88100D1941C /* ReminderListViewController.swift in Sources */,
+				0A7238862AD48F80003FE2CE /* Date+Today.swift in Sources */,
 				0A7849042ACDB88100D1941C /* AppDelegate.swift in Sources */,
 				0A7849062ACDB88100D1941C /* SceneDelegate.swift in Sources */,
 				0A7849362ACDB9DF00D1941C /* Reminder.swift in Sources */,
+				0A7238892AD492DC003FE2CE /* ReminderListViewController+DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A7849092ACDB88100D1941C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A78490A2ACDB88100D1941C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A78490E2ACDB88300D1941C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -461,6 +473,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,6 +501,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,8 +15,8 @@ struct Reminder {
     var isComplete: Bool = false
 }
 
-#if DEBUG
 
+#if DEBUG
 extension Reminder {
     static var sampleData = [
         Reminder(
@@ -47,6 +47,5 @@ extension Reminder {
             title: "Add beta testers to TestFlight", dueDate: Date().addingTimeInterval(101000.0),
             notes: "v0.9 out on Friday")
     ]
-
 }
 #endif
